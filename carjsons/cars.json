@@ -1,0 +1,41 @@
+[{
+    "id": 40,
+    "car": {
+            "car_make": "Lamborghini",
+            "car_model": "Murciélago",
+            "car_year": 2002
+    },
+    "price": "$13724.05",
+    "total_sales": 149
+},
+{
+    "id": 41,
+    "car": {
+            "car_make": "Honda",
+            "car_model": "Fit",
+            "car_year": 2002
+    },
+    "price": "$12000",
+    "total_sales": 200
+},
+{
+    "id": 42,
+    "car": {
+            "car_make": "Toyota",
+            "car_model": "Corola",
+            "car_year": 2006
+    },
+    "price": "$20000",
+    "total_sales": 13
+},
+{
+    "id": 43,
+    "car": {
+            "car_make": "Lamborghini",
+            "car_model": "Murciélago",
+            "car_year": 2005
+    },
+    "price": "$40000",
+    "total_sales": 40
+}
+]
