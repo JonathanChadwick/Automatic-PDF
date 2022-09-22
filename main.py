@@ -4,7 +4,7 @@ def process_data(list_of_dict_of_cars):
     most_revenue = ('model', 0)
     most_sales = ('model' , 0)
     sales_by_year = {}
-    most_poplar_year = (0, 0) #(year, total_sales)
+    most_popular_year = (0, 0) #(year, total_sales)
     for car in list_of_dict_of_cars:
 
         # Find car with the most revenue (price * total sales)
@@ -22,3 +22,11 @@ def process_data(list_of_dict_of_cars):
         else:
             sales_by_year[car['year']] += car['total_sales']
         if
+            sales_by_year[car['year']] > most_popular_year[1]:
+                most_popular_year = (car['year'], sales_by_year[car['year']])
+        
+        return {
+            'most_revenue' : most_revenue
+            'most-sales' : most_sales
+            'most_popular_year' : most_popular_year
+        }
