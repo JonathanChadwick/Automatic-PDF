@@ -17,3 +17,8 @@ def process_data(list_of_dict_of_cars):
             most_sales = (car['car_model'], car['total_sales'])
 
         # Calculate the most popular car_year across all car make/models: "The most popular year was {year} with {total sales in that year} sales."
+        if car['year'] not in sales_by_year:
+            sales_by_year[car['year']] = car['total_sales']
+        else:
+            sales_by_year[car['year']] += car['total_sales']
+        if
