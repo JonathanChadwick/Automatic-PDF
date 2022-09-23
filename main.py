@@ -21,12 +21,25 @@ def process_data(list_of_dict_of_cars):
             sales_by_year[car['year']] = car['total_sales']
         else:
             sales_by_year[car['year']] += car['total_sales']
-        if
-            sales_by_year[car['year']] > most_popular_year[1]:
+
+        if sales_by_year[car['year']] > most_popular_year[1]:
                 most_popular_year = (car['year'], sales_by_year[car['year']])
-        
+
         return {
-            'most_revenue' : most_revenue
-            'most-sales' : most_sales
-            'most_popular_year' : most_popular_year
+            'most_revenue' : most_revenue,
+            'most_sales' : most_sales,
+            'most_popular_year' : most_popular_year,
         }
+
+# Generate PDF:
+    # reports.generate(filename, title, addittional_info, table_data)
+    # filename = /tmp/carsreport.pdf
+    # title =
+    # addittional_info =
+    # table_data = cars_dict_to_table(___)
+
+
+#Email:
+    #emails.generate(sender, recipient, subject, body, attachment_path)
+
+    #emails.send(message)
